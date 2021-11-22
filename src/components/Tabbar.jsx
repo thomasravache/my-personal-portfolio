@@ -7,6 +7,7 @@ import { GoProject } from 'react-icons/go';
 import { TiContacts } from 'react-icons/ti';
 import classNames from 'classnames';
 import tabbarStyles from './tailwindStyles/tabbarStyles';
+import ThemeSwitch from './ThemeSwitch';
 
 const Tabbar = ({ currentRoute, setCurrentRoute }) => {
   const getTabIcon = useCallback((linkItem) => {
@@ -38,6 +39,9 @@ const Tabbar = ({ currentRoute, setCurrentRoute }) => {
           </span>
         ))
       }
+      <div>
+        <ThemeSwitch />
+      </div>
     </nav>
   );
 };

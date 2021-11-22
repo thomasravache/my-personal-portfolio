@@ -24,7 +24,7 @@ const Navbar = ({ currentRoute, setCurrentRoute }) => {
           ))
         }
       </ul>
-      {/* <ThemeSwitch /> */}
+      <ThemeSwitch />
     </nav>
   );
 };
