@@ -24,7 +24,7 @@ const Tabbar = ({ currentRoute, setCurrentRoute }) => {
       default:
         return console.log('nenhum case foi selecionado');
     }
-  })
+  }, [])
   return (
     <nav>
       {
