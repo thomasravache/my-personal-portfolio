@@ -1,4 +1,6 @@
+import React from 'react';
 import Navbar from './components/Navbar';
+import Tabbar from './components/Tabbar';
 import useNavigation from './hooks/useNavigation';
 
 function App() {
@@ -6,6 +8,7 @@ function App() {
   return (
     <div className="">
       <Navbar currentRoute={ currentRoute } setCurrentRoute={ setCurrentRoute }/>
+      <Tabbar currentRoute={ currentRoute } setCurrentRoute={ setCurrentRoute }/>
     </div>
   );
 }
