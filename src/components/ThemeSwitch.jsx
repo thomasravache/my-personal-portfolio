@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import MyContext from '../context';
+import themeSwitchStyles from './tailwindStyles/themeSwitchStyles';
 
 const ThemeSwitch = () => {
   const { theme, changeThemeTo } = useContext(MyContext);
@@ -12,8 +13,14 @@ const ThemeSwitch = () => {
   return (
     <button
       onClick={ () => changeThemeTo(theme === 'dark' ? 'light' : 'dark') }
+      className={ themeSwitchStyles.buttonStyle }
     >
-      <svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        className={ themeSwitchStyles.svgStyle }
+      >
         {
           (mounted && theme === 'dark')
           ? (

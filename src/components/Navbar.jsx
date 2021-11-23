@@ -7,16 +7,16 @@ import classNames from 'classnames';
 
 const Navbar = ({ currentRoute, setCurrentRoute }) => {
   return (
-    <nav>
-      <span>
+    <nav className={ navbarStyles.navbar }>
+      <span className={navbarStyles.logo}>
         <FaCode />
       </span>
-      <ul>
+      <ul className={navbarStyles.navItems}>
         {
           navigationLinks.map((link) => (
             <li
             key={link}
-            className={ classNames([currentRoute === link && navbarStyles.selectedItem]) }
+            className={ classNames([navbarStyles.navItem, currentRoute === link && navbarStyles.selectedItem]) }
             onClick={ () => setCurrentRoute(link) }
             >
               {link}
