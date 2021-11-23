@@ -27,19 +27,21 @@ const Tabbar = ({ currentRoute, setCurrentRoute }) => {
     }
   }, [])
   return (
-    <nav>
+    <nav className={ tabbarStyles.tabbar }>
       {
         navigationLinks.map((linkItem) => (
           <span
             key={linkItem}
-            className={classNames([linkItem === currentRoute && tabbarStyles.selectedItem])}
+            className={classNames([tabbarStyles.tabItem, linkItem === currentRoute && tabbarStyles.selectedItem])}
             onClick={ () => setCurrentRoute(linkItem) }
           >
-            {getTabIcon(linkItem)}
+            <span className={ tabbarStyles.icon }>
+              {getTabIcon(linkItem)}
+            </span>
           </span>
         ))
       }
-      <div>
+      <div className={ tabbarStyles.toggleThemeContainer }>
         <ThemeSwitch />
       </div>
     </nav>
