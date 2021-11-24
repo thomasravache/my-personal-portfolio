@@ -16,7 +16,7 @@ const Contact = () => {
   };
 
   return(
-    <div className="relative bg-green-100 px-4 antialiased w-full h-full flex justify-center pb-5 pt-5" id="Contato">
+    <div className="relative bg-green-100 px-4 antialiased w-full h-full flex justify-center pb-5 pt-5" id="contato">
       <div className="max-w-5xl mx-auto px-3 w-screen md:px-6 lg:px-8 mb-12 flex flex-col">
         <div>
           <img src={emailCapture} alt="" />

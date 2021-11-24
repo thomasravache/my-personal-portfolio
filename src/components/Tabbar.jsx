@@ -31,14 +31,14 @@ const Tabbar = ({ currentRoute, setCurrentRoute }) => {
   return (
     <nav className={ tabbarStyles.tabbar }>
       {
-        navigationLinks.map((linkItem) => (
+        navigationLinks.map(({ name, id }) => (
           <Link
             activeClass="active"
-            to={linkItem}
+            to={id}
             smooth={true}
             spy={true}
             duration={750}
-            key={linkItem}
+            key={id}
             offset={0}
             className={classNames([tabbarStyles.tabItem])}
             // onClick={ () => {
@@ -47,7 +47,7 @@ const Tabbar = ({ currentRoute, setCurrentRoute }) => {
             // } }
           >
             <span className={ tabbarStyles.icon }>
-              {getTabIcon(linkItem)}
+              {getTabIcon(name)}
             </span>
           </Link>
         ))

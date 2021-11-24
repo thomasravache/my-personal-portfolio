@@ -13,13 +13,13 @@ const Navbar = ({ currentRoute, setCurrentRoute }) => {
       </span>
       <ul className={navbarStyles.navItems}>
         {
-          navigationLinks.map((linkItem) => (
+          navigationLinks.map(({ name, id }) => (
             <li
-            key={linkItem}
-            className={ classNames([navbarStyles.navItem, currentRoute === linkItem && navbarStyles.selectedItem]) }
-            onClick={ () => setCurrentRoute(linkItem) }
+            key={id}
+            className={ classNames([navbarStyles.navItem, currentRoute === name && navbarStyles.selectedItem]) }
+            onClick={ () => setCurrentRoute(name) }
             >
-              {linkItem}
+              {name}
             </li>
           ))
         }
