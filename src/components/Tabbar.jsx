@@ -40,8 +40,8 @@ const Tabbar = ({ currentRoute, setCurrentRoute }) => {
             duration={750}
             key={id}
             offset={0}
-            className={classNames([tabbarStyles.tabItem, currentRoute === name && 'selectedItem'])}
-            onClick={() => setCurrentRoute(name)}
+            className={classNames([tabbarStyles.tabItem])} // currentRoute === name && 'selectedItem'
+            // onClick={() => setCurrentRoute(name)}
           >
             <span className={ tabbarStyles.icon }>
               {getTabIcon(name)}
