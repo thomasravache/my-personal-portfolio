@@ -22,7 +22,7 @@ const Contact = () => {
           <img src={emailCapture} alt="" />
         </div>
         <div className="bg-white w-full shadow rounded p-8 sm:p-12 mt-10">
-          <p className="text-3xl font-bold leading-7 text-center">Contact me</p>
+          <p className="text-3xl font-bold leading-7 text-center">Entre em contato</p>
           <form onSubmit={ sendEmail }>
             <div className="md:flex items-center mt-12">
               <div className="w-full flex flex-col">
