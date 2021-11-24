@@ -5,8 +5,8 @@ import aboutImage from '../img/about.svg';
 const About = () => {
   const { personalInfo } = aboutInfo;
   return (
-    <div className="relative bg-yellow-100 px-4 mx-auto antialiased w-full h-screen flex justify-center pb-5">
-      <div className="flex flex-col md:flex-row items-center h-screen justify-center md:text-xl" id="Sobre mim">
+    <div className="relative bg-yellow-100 px-4 mx-auto antialiased w-full h-screen flex justify-center pb-5" id="Sobre mim">
+      <div className="flex flex-col md:flex-row items-center h-screen justify-center md:text-xl">
         <div className="mb-3 md:mr-5">
           <img className="w-64" src={aboutImage} alt="" />
         </div>

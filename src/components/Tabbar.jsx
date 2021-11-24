@@ -39,7 +39,7 @@ const Tabbar = ({ currentRoute, setCurrentRoute }) => {
             spy={true}
             duration={750}
             key={linkItem}
-            offset={0}
+            offset={20}
             className={classNames([tabbarStyles.tabItem])}
             onClick={ () => {
               setCurrentRoute(linkItem);

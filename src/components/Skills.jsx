@@ -4,8 +4,8 @@ import skillsInfo from '../data/skillsInfo';
 const Skills = () => {
   const { hardSkills, softSkills } = skillsInfo;
   return (
-    <div className="relative bg-blue-100 px-4 mx-auto antialiased w-full h-full flex justify-center pb-5">
-      <div className="flex flex-col" id="Skills">
+    <div className="relative bg-blue-100 px-4 mx-auto antialiased w-full h-full flex justify-center pb-5" id="Skills">
+      <div className="flex flex-col">
         <div className="flex flex-col justify-center items-center text-center py-5">
           <div class="flex flex-wrap w-full mb-4 p-4">
             <div class="w-full mb-6 lg:mb-0">

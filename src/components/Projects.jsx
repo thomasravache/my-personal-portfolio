@@ -3,8 +3,8 @@ import projectsInfo from '../data/projectsInfo';
 
 const Projects = () => {
   return (
-    <div className="relative bg-red-100 px-4 antialiased w-full h-full flex justify-center pb-5">
-      <div className="container px-5 py-24 mx-auto max-w-7x1 flex flex-col items-center justify-center" id="Projetos">
+    <div className="relative bg-red-100 px-4 antialiased w-full h-full flex justify-center pb-5" id="Projetos">
+      <div className="container px-5 py-24 mx-auto max-w-7x1 flex flex-col items-center justify-center">
         <div class="flex flex-wrap w-full mb-4 p-4">
           <div class="w-full mb-6 lg:mb-0">
             <h1 class="sm:text-4xl text-5xl font-medium font-bold title-font mb-2 text-gray-900">Projetos</h1>
