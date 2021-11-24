@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import emailCapture from '../img/email-capture.svg';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const [isSended, setIsSended] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('gmailMessage', 'template_owhswnk', e.target, 'user_uuPBGrLHvhx45HuAtCYhS')
       .then((result) => {
           console.log(result.text);
+          setIsSended(true);
+          const myTimeOut = setTimeout(() => {
+            setIsSended(false);
+            clearTimeout(myTimeOut);
+          }, 3000);
       }, (error) => {
           console.log(error.text);
       });
@@ -19,7 +25,7 @@ const Contact = () => {
     <div className="relative bg-green-100 px-4 antialiased w-full h-full flex justify-center pb-5 pt-5" id="contato">
       <div className="max-w-5xl mx-auto px-3 w-screen md:px-6 lg:px-8 mb-12 flex flex-col">
         <div>
-          <img src={emailCapture} alt="" />
+          <img src={emailCapture} alt="" loading="lazy" />
         </div>
         <div className="bg-white w-full shadow rounded p-8 sm:p-12 mt-10">
           <p className="text-3xl font-bold leading-7 text-center">Entre em contato</p>
@@ -50,6 +56,11 @@ const Contact = () => {
               <button className="mt-9 font-semibold leading-none text-white py-4 px-10 bg-blue-700 rounded hover:bg-blue-600 focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 focus:outline-none">
                   Enviar mensagem
               </button>
+            </div>
+            <div className="flex items-center justify-center mt-4">
+              {
+                isSended && <span className="text-green-500">Sucesso! Obrigado!</span>
+              }
             </div>
           </form>
         </div>

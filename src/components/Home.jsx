@@ -25,6 +25,7 @@ const Home = () => {
             src={myPhoto}
             alt="foto de Thomas Ravache"
             className="w-64 h-64 rounded-full"
+            loading="lazy"
           />
         </div>
       </div>

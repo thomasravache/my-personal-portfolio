@@ -16,7 +16,7 @@ const Projects = () => {
             projectsInfo.map(({ title, description, projectLink, tags }) => (
               <div class="xl:w-1/3 md:w-1/2 p-4" key={ title }>
                 <div class="bg-white p-6 rounded-lg">
-                  <img class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded w-full object-cover object-center mb-6" src="https://kuyou.id/content/images/ctc_2020021605150668915.jpg" alt="Size 720x400"/>
+                  <img class="lg:h-60 xl:h-56 md:h-64 sm:h-72 xs:h-72 h-72 rounded w-full object-cover object-center mb-6" src="https://kuyou.id/content/images/ctc_2020021605150668915.jpg" alt="Size 720x400" loading="lazy"/>
                   <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{ title }</h2>
                   <p class="leading-relaxed text-base">{ description }</p>
                   <div className="">

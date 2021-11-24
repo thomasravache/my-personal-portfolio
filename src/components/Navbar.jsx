@@ -4,6 +4,8 @@ import { FaCode } from 'react-icons/fa';
 import ThemeSwitch from './ThemeSwitch';
 import navbarStyles from './tailwindStyles/navbarStyles';
 import classNames from 'classnames';
+import { Link } from 'react-scroll';
+import './tailwindStyles/styles.css';
 
 const Navbar = ({ currentRoute, setCurrentRoute }) => {
   return (
@@ -14,12 +16,20 @@ const Navbar = ({ currentRoute, setCurrentRoute }) => {
       <ul className={navbarStyles.navItems}>
         {
           navigationLinks.map(({ name, id }) => (
-            <li
-            key={id}
-            className={ classNames([navbarStyles.navItem, currentRoute === name && navbarStyles.selectedItem]) }
-            onClick={ () => setCurrentRoute(name) }
-            >
-              {name}
+            <li className={ navbarStyles.navItems } >
+              <Link
+              activeClass="activeItem"
+              to={id}
+              smooth={true}
+              spy={true}
+              duration={750}
+              key={id}
+              offset={0}
+              className={ classNames([navbarStyles.navItem]) } // currentRoute === name && navbarStyles.selectedItem
+              // onClick={ () => setCurrentRoute(name) }
+              >
+                {name}
+              </Link>
             </li>
           ))
         }

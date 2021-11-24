@@ -20,7 +20,7 @@ const Skills = () => {
                   key={ name }
                   className="h-44 w-32 bg-gray-100 rounded-xl flex flex-col justify-center shadow duration-300 hover:bg-white hover:shadow-xl m-4"
                 >
-                  <img className="h-14" src={ srcIcon } alt={name} />
+                  <img className="h-14" src={ srcIcon } alt={name} loading="lazy"/>
                   <span className="mt-6 text-sm ?leading-5 font-semibold text-center" >{ name }</span>
                 </div>
               ))
@@ -41,7 +41,7 @@ const Skills = () => {
                   key={ name }
                   className="h-44 w-32 bg-gray-100 rounded-xl flex flex-col justify-center shadow duration-300 hover:bg-white hover:shadow-xl m-4"
                 >
-                  <img className="h-14" src={ srcIcon } alt={name} />
+                  <img className="h-14" src={ srcIcon } alt={name} loading="lazy"/>
                   <span className="mt-6 text-sm ?leading-5 font-semibold text-center" >{ name }</span>
                 </div>
               ))
