@@ -9,6 +9,7 @@ import classNames from 'classnames';
 import tabbarStyles from './tailwindStyles/tabbarStyles';
 import ThemeSwitch from './ThemeSwitch';
 import { Link } from 'react-scroll';
+import './tailwindStyles/styles.css';
 
 const Tabbar = ({ currentRoute, setCurrentRoute }) => {
   const getTabIcon = useCallback((linkItem) => {
@@ -36,11 +37,14 @@ const Tabbar = ({ currentRoute, setCurrentRoute }) => {
             to={linkItem}
             smooth={true}
             spy={true}
-            duration={1000}
+            duration={500}
             key={linkItem}
             offset={0}
-            className={classNames([tabbarStyles.tabItem, linkItem === currentRoute && tabbarStyles.selectedItem])}
-            onClick={ () => setCurrentRoute(linkItem) }
+            className={classNames([tabbarStyles.tabItem])}
+            onClick={ () => {
+              setCurrentRoute(linkItem);
+              console.log(document.querySelector(`#${linkItem}`));
+            } }
           >
             <span className={ tabbarStyles.icon }>
               {getTabIcon(linkItem)}
