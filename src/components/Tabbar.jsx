@@ -37,7 +37,7 @@ const Tabbar = ({ currentRoute, setCurrentRoute }) => {
             to={linkItem}
             smooth={true}
             spy={true}
-            duration={500}
+            duration={750}
             key={linkItem}
             offset={0}
             className={classNames([tabbarStyles.tabItem])}
