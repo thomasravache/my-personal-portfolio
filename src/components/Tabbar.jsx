@@ -8,6 +8,7 @@ import { TiContacts } from 'react-icons/ti';
 import classNames from 'classnames';
 import tabbarStyles from './tailwindStyles/tabbarStyles';
 import ThemeSwitch from './ThemeSwitch';
+import { Link } from 'react-scroll';
 
 const Tabbar = ({ currentRoute, setCurrentRoute }) => {
   const getTabIcon = useCallback((linkItem) => {
@@ -30,15 +31,21 @@ const Tabbar = ({ currentRoute, setCurrentRoute }) => {
     <nav className={ tabbarStyles.tabbar }>
       {
         navigationLinks.map((linkItem) => (
-          <span
+          <Link
+            activeClass="active"
+            to={linkItem}
+            smooth={true}
+            spy={true}
+            duration={1000}
             key={linkItem}
+            offset={0}
             className={classNames([tabbarStyles.tabItem, linkItem === currentRoute && tabbarStyles.selectedItem])}
             onClick={ () => setCurrentRoute(linkItem) }
           >
             <span className={ tabbarStyles.icon }>
               {getTabIcon(linkItem)}
             </span>
-          </span>
+          </Link>
         ))
       }
       <div className={ tabbarStyles.toggleThemeContainer }>
