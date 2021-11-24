@@ -39,12 +39,12 @@ const Tabbar = ({ currentRoute, setCurrentRoute }) => {
             spy={true}
             duration={750}
             key={linkItem}
-            offset={20}
+            offset={0}
             className={classNames([tabbarStyles.tabItem])}
-            onClick={ () => {
-              setCurrentRoute(linkItem);
-              console.log(document.querySelector(`#${linkItem}`));
-            } }
+            // onClick={ () => {
+            //   setCurrentRoute(linkItem);
+            //   console.log(document.querySelector(`#${linkItem}`));
+            // } }
           >
             <span className={ tabbarStyles.icon }>
               {getTabIcon(linkItem)}
