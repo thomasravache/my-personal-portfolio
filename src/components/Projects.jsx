@@ -36,7 +36,7 @@ const Projects = () => {
                     <a href={projectLink} target="_blank" rel="noreferrer" className="block text-center p-2 pl-5 pr-5 bg-green-500 hover:bg-green-400 duration-300 text-gray-100 text-lg rounded-lg focus:border-4 border-green-300">Acessar</a>
                   </div>
                 </div>
-            </div>
+              </div>
             ))
           }
         </div>
