@@ -1,6 +1,6 @@
 const homeInfo = {
-  title: 'Olá, eu sou Thomas Ravache!',
-  tags: ['developer', 'ciclista', 'longboarder', 'tolkien-fan', 'tech-lover', 'fullstack'],
+  title: 'Olá! Sou o Thomas, e sou Desenvolvedor Full Stack Jr.',
+  subtitle: 'Apaixonado por tecnologia, e sempre em busca de novos aprendizados.',
 };
 
 export default homeInfo;

@@ -24,7 +24,7 @@ const Navbar = ({ currentRoute, setCurrentRoute }) => {
               spy={true}
               duration={750}
               key={id}
-              offset={0}
+              // offset={-10}
               className={ classNames([navbarStyles.navItem]) } // currentRoute === name && navbarStyles.selectedItem
               // onClick={ () => setCurrentRoute(name) }
               >
