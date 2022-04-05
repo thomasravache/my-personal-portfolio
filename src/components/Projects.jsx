@@ -3,7 +3,7 @@ import projectsInfo from '../data/projectsInfo';
 
 const Projects = () => {
   return (
-    <div className="relative bg-red-100 px-4 antialiased w-full h-full flex justify-center pb-5" id="projetos">
+    <div className="relative bg-gray-100 px-4 antialiased w-full h-full flex justify-center pb-5" id="projetos">
       <div className="container px-5 py-24 mx-auto max-w-7x1 flex flex-col items-center justify-center">
         <div class="flex flex-wrap w-full mb-4 p-4">
           <div class="w-full mb-6 lg:mb-0">
@@ -33,7 +33,7 @@ const Projects = () => {
                     }
                   </div>
                   <div className="mt-3">
-                    <a href={projectLink} target="_blank" rel="noreferrer" className="block text-center p-2 pl-5 pr-5 bg-green-500 hover:bg-green-400 duration-300 text-gray-100 text-lg rounded-lg focus:border-4 border-green-300">Acessar</a>
+                    <a href={projectLink} target="_blank" rel="noreferrer" className="block text-center p-2 pl-5 pr-5 bg-indigo-500 hover:bg-indigo-600 duration-300 text-gray-100 text-lg rounded-lg focus:border-4 border-green-300">Acessar</a>
                   </div>
                 </div>
               </div>

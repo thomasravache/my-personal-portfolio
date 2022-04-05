@@ -22,7 +22,7 @@ const Contact = () => {
   };
 
   return(
-    <div className="relative bg-green-100 px-4 antialiased w-full h-full flex justify-center pb-5 pt-5" id="contato">
+    <div className="relative bg-gray-50 px-4 antialiased w-full h-full flex justify-center pb-5 pt-5" id="contato">
       <div className="max-w-5xl mx-auto px-3 w-screen md:px-6 lg:px-8 mb-12 flex flex-col">
         <div>
           <img src={emailCapture} alt="" loading="lazy" />
@@ -53,7 +53,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex items-center justify-center w-full">
-              <button className="mt-9 font-semibold leading-none text-white py-4 px-10 bg-blue-700 rounded hover:bg-blue-600 focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 focus:outline-none">
+              <button className="mt-9 font-semibold leading-none text-white py-4 px-10 bg-indigo-500 rounded hover:bg-indigo-400 focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 focus:outline-none">
                   Enviar mensagem
               </button>
             </div>
