@@ -6,7 +6,7 @@ import pensamentoCritico from '../img/pensamento-critico.svg';
 const skillsInfo = {
   hardSkills: [
     {
-      name: 'JavaScript',
+      name: 'Javascript',
       srcIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
     },
     {
@@ -28,6 +28,30 @@ const skillsInfo = {
     {
       name: 'Tailwind CSS',
       srcIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
+    },
+    {
+      name: 'MySQL',
+      srcIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg',
+    },
+    {
+      name: 'Node.js',
+      srcIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+    },
+    {
+      name: 'Express.js',
+      srcIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
+    },
+    {
+      name: 'Sequelize',
+      srcIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg',
+    },
+    {
+      name: 'Typescript',
+      srcIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+    },
+    {
+      name: 'Docker',
+      srcIcon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
     },
   ],
   softSkills: [

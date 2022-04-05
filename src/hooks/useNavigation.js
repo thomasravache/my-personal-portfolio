@@ -3,7 +3,7 @@ import navigationLinks from '../data/navigation';
 
 const useNavigation = () => {
   const [firstNavigationElement] = navigationLinks;
-  const [route, setRoute] = useState(firstNavigationElement);
+  const [route, setRoute] = useState(firstNavigationElement.name);
 
   const setCurrentRoute = useCallback((routeOption) => {
     if (route === routeOption) return;

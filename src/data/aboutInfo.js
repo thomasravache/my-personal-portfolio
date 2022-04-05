@@ -1,8 +1,7 @@
 const aboutInfo = {
   personalInfo: [
-    'Meu nome é Thomas. Tenho 23 anos e moro em São Paulo. Sou um desenvolvedor Front-end Jr. e estou estudando desenvolvimento web FullStack.',
-    'Gosto muito de andar de longboard e de bicicleta sempre que possível, e gosto muito de ler livros de fantasia e mitologia (adoro os livros do J. R. R. Tolkien)!',
-    'Minha formação é primeiramente de Gestão Financeira, sou graduando em Análise e Desenvolvimento de Sistemas e estou estudando desenvolvimento Web na Trybe.'
+    'Desde pequeno eu sempre gostei muito de tecnologia, mas na época não via como profissão. Enquanto atuei na área administrativa queria resolver os problemas operacionais, o que me fez olhar novamente para a tecnologia.',
+    ' Hoje sou Desenvolvedor Full Stack apaixonado pelo desenvolvimento web! Meu objetivo é ser um desenvolvedor qualificado tecnicamente, que busca sempre aprender novas tecnologias e utilizar as melhores práticas e padrões do mercado.'
   ]
 };
 

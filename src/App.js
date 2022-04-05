@@ -6,6 +6,8 @@ import About from './components/About';
 import useNavigation from './hooks/useNavigation';
 import appStyles from './appStyles';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 function App() {
   const { currentRoute, setCurrentRoute } = useNavigation();
@@ -15,6 +17,8 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Projects />
+      <Contact />
       <Tabbar currentRoute={ currentRoute } setCurrentRoute={ setCurrentRoute }/>
     </div>
   );
