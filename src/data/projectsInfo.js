@@ -17,14 +17,14 @@ const projectsInfo = [
     title: 'Trybers and Dragons',
     srcImage: 'https://github.com/thomasravache/img-readmes/blob/master/project-trybers-and-dragons-trybe/Screenshot%20from%202022-03-21%2010-10-44.png?raw=true',
     description: 'O objetivo do projeto foi aplicar os princípios da arquitetura SOLID e os princípios de POO em uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos RPG (Role Playing Game).',
-    projectLink: 'https://github.com/thomasravache/project-trybesmith-trybe',
+    projectLink: 'https://github.com/thomasravache/project-trybers-and-dragons-trybe',
     tags: ['backend', 'nodejs', 'typescript'],
   },
   {
     title: 'TrybeSmith',
     srcImage: 'https://github.com/thomasravache/img-readmes/blob/master/project-trybesmith-trybe/Screenshot%20from%202022-03-30%2000-17-46.png?raw=true',
     description: 'O objetivo do projeto foi construir uma API que faz o CRUD (Create, Read, Update e Delete) de itens medievais, utilizando TypeScript, onde os endpoints irão ler e escrever em um banco de dados MySQL.',
-    projectLink: 'https://github.com/thomasravache/project-trybers-and-dragons-trybe',
+    projectLink: 'https://github.com/thomasravache/project-trybesmith-trybe',
     tags: ['backend', 'nodejs', 'typescript', 'mysql', 'express'],
   },
   {
