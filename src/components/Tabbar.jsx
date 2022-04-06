@@ -37,7 +37,7 @@ const Tabbar = ({ currentRoute, setCurrentRoute }) => {
             to={id}
             smooth={true}
             spy={true}
-            duration={750}
+            duration={500}
             key={id}
             offset={0}
             className={classNames([tabbarStyles.tabItem])} // classNames([tabbarStyles.tabItem, currentRoute === name && 'selectedItem']

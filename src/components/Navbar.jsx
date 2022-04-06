@@ -22,9 +22,9 @@ const Navbar = ({ currentRoute, setCurrentRoute }) => {
               to={id}
               smooth={true}
               spy={true}
-              duration={750}
+              duration={500}
               key={id}
-              // offset={-10}
+              offset={name === 'Contato'? 50 : -80}
               className={ classNames([navbarStyles.navItem]) } // currentRoute === name && navbarStyles.selectedItem
               // onClick={ () => setCurrentRoute(name) }
               >
